@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app="movieApp">
+<head>
+	<title>DAM Test</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/movies.min.css">
+	<script src="js/movies.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="application/javascript">
+	var toolTipFlag = false;
+	$("div.checkbox").on("click",function(){
+		if(!toolTipFlag) {
+			toolTipFlag = true;
+			$(this).before('<span class="tooltips"><span class="close-tool-tip">x</span>Select up to<br>3 more vehicles to compare.</span>');
+			$(".close-tool-tip").on("click",function(){
+				$(this).parent().fadeOut(600);
+			});
+		}
+	});
+</script>
+
+</body>
+</html>

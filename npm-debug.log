@@ -1,0 +1,165 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/Rodrigo/Globant/Cars.com/local-test',
+5 verbose install   [ 'karma',
+5 verbose install     'karma-chrome-launcher',
+5 verbose install     'karma-firefox-launcher',
+5 verbose install     'karma-jasmine',
+5 verbose install     'protractor',
+5 verbose install     'http-server',
+5 verbose install     'tmp',
+5 verbose install     'bower',
+5 verbose install     'shelljs',
+5 verbose install     'connect-livereload',
+5 verbose install     'grunt',
+5 verbose install     'grunt-contrib-connect',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-postcss',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'grunt-contrib-cssmin',
+5 verbose install     'grunt-contrib-htmlmin',
+5 verbose install     'grunt-processhtml' ] ]
+6 info preinstall angular-template@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping karma@^0.12.16 /Users/Rodrigo/Globant/Cars.com/local-test
+9 verbose already installed skipping karma-chrome-launcher@^0.1.4 /Users/Rodrigo/Globant/Cars.com/local-test
+10 verbose already installed skipping karma-firefox-launcher@^0.1.3 /Users/Rodrigo/Globant/Cars.com/local-test
+11 verbose already installed skipping karma-jasmine@~0.1.0 /Users/Rodrigo/Globant/Cars.com/local-test
+12 verbose already installed skipping protractor@^2.1.0 /Users/Rodrigo/Globant/Cars.com/local-test
+13 verbose already installed skipping http-server@^0.6.1 /Users/Rodrigo/Globant/Cars.com/local-test
+14 verbose already installed skipping tmp@0.0.23 /Users/Rodrigo/Globant/Cars.com/local-test
+15 verbose already installed skipping bower@^1.3.1 /Users/Rodrigo/Globant/Cars.com/local-test
+16 verbose already installed skipping shelljs@^0.2.6 /Users/Rodrigo/Globant/Cars.com/local-test
+17 verbose already installed skipping connect-livereload@^0.5.3 /Users/Rodrigo/Globant/Cars.com/local-test
+18 verbose already installed skipping grunt@^0.4.5 /Users/Rodrigo/Globant/Cars.com/local-test
+19 verbose already installed skipping grunt-contrib-connect@^0.10.1 /Users/Rodrigo/Globant/Cars.com/local-test
+20 verbose already installed skipping grunt-contrib-watch@^0.6.1 /Users/Rodrigo/Globant/Cars.com/local-test
+21 verbose already installed skipping grunt-postcss@~0.5.5 /Users/Rodrigo/Globant/Cars.com/local-test
+22 verbose already installed skipping grunt-contrib-uglify@~0.9.1 /Users/Rodrigo/Globant/Cars.com/local-test
+23 verbose already installed skipping grunt-contrib-cssmin@~0.12.3 /Users/Rodrigo/Globant/Cars.com/local-test
+24 verbose already installed skipping grunt-contrib-htmlmin@~0.4.0 /Users/Rodrigo/Globant/Cars.com/local-test
+25 verbose already installed skipping grunt-processhtml@~0.3.8 /Users/Rodrigo/Globant/Cars.com/local-test
+26 silly resolved []
+27 info build /Users/Rodrigo/Globant/Cars.com/local-test
+28 verbose linkStuff [ false, false, false, '/Users/Rodrigo/Globant/Cars.com' ]
+29 info linkStuff angular-template@0.0.0
+30 verbose linkBins angular-template@0.0.0
+31 verbose linkMans angular-template@0.0.0
+32 verbose rebuildBundles angular-template@0.0.0
+33 verbose rebuildBundles [ '.bin',
+33 verbose rebuildBundles   'autoprefixer-core',
+33 verbose rebuildBundles   'bower',
+33 verbose rebuildBundles   'connect-livereload',
+33 verbose rebuildBundles   'cssnano',
+33 verbose rebuildBundles   'grunt',
+33 verbose rebuildBundles   'grunt-contrib-connect',
+33 verbose rebuildBundles   'grunt-contrib-cssmin',
+33 verbose rebuildBundles   'grunt-contrib-htmlmin',
+33 verbose rebuildBundles   'grunt-contrib-uglify',
+33 verbose rebuildBundles   'grunt-contrib-watch',
+33 verbose rebuildBundles   'grunt-postcss',
+33 verbose rebuildBundles   'grunt-processhtml',
+33 verbose rebuildBundles   'http-server',
+33 verbose rebuildBundles   'karma',
+33 verbose rebuildBundles   'karma-chrome-launcher',
+33 verbose rebuildBundles   'karma-firefox-launcher',
+33 verbose rebuildBundles   'karma-jasmine',
+33 verbose rebuildBundles   'pixrem',
+33 verbose rebuildBundles   'protractor',
+33 verbose rebuildBundles   'shelljs',
+33 verbose rebuildBundles   'tmp' ]
+34 verbose rebuild bundle /Users/Rodrigo/Globant/Cars.com/local-test/node_modules/autoprefixer-core
+35 info build /Users/Rodrigo/Globant/Cars.com/local-test/node_modules/autoprefixer-core
+36 info preinstall autoprefixer-core@5.2.1
+37 verbose linkStuff [ false,
+37 verbose linkStuff   false,
+37 verbose linkStuff   false,
+37 verbose linkStuff   '/Users/Rodrigo/Globant/Cars.com/local-test/node_modules' ]
+38 info linkStuff autoprefixer-core@5.2.1
+39 verbose linkBins autoprefixer-core@5.2.1
+40 verbose linkMans autoprefixer-core@5.2.1
+41 verbose rebuildBundles autoprefixer-core@5.2.1
+42 verbose rebuildBundles [ 'browserslist', 'caniuse-db', 'num2fraction', 'postcss' ]
+43 info install autoprefixer-core@5.2.1
+44 info postinstall autoprefixer-core@5.2.1
+45 verbose rebuild bundle /Users/Rodrigo/Globant/Cars.com/local-test/node_modules/cssnano
+46 info build /Users/Rodrigo/Globant/Cars.com/local-test/node_modules/cssnano
+47 info preinstall cssnano@2.0.3
+48 verbose linkStuff [ false,
+48 verbose linkStuff   false,
+48 verbose linkStuff   false,
+48 verbose linkStuff   '/Users/Rodrigo/Globant/Cars.com/local-test/node_modules' ]
+49 info linkStuff cssnano@2.0.3
+50 verbose linkBins cssnano@2.0.3
+51 verbose link bins [ { cssnano: 'bin/cmd.js' },
+51 verbose link bins   '/Users/Rodrigo/Globant/Cars.com/local-test/node_modules/.bin',
+51 verbose link bins   false ]
+52 verbose linkMans cssnano@2.0.3
+53 verbose rebuildBundles cssnano@2.0.3
+54 verbose rebuildBundles [ 'balanced-match',
+54 verbose rebuildBundles   'css-list',
+54 verbose rebuildBundles   'flatten',
+54 verbose rebuildBundles   'indexes-of',
+54 verbose rebuildBundles   'minimist',
+54 verbose rebuildBundles   'postcss',
+54 verbose rebuildBundles   'postcss-calc',
+54 verbose rebuildBundles   'postcss-colormin',
+54 verbose rebuildBundles   'postcss-convert-values',
+54 verbose rebuildBundles   'postcss-discard-comments',
+54 verbose rebuildBundles   'postcss-discard-duplicates',
+54 verbose rebuildBundles   'postcss-discard-empty',
+54 verbose rebuildBundles   'postcss-discard-unused',
+54 verbose rebuildBundles   'postcss-font-family',
+54 verbose rebuildBundles   'postcss-merge-idents',
+54 verbose rebuildBundles   'postcss-merge-rules',
+54 verbose rebuildBundles   'postcss-minify-font-weight',
+54 verbose rebuildBundles   'postcss-minify-selectors',
+54 verbose rebuildBundles   'postcss-minify-trbl',
+54 verbose rebuildBundles   'postcss-normalize-url',
+54 verbose rebuildBundles   'postcss-pseudoelements',
+54 verbose rebuildBundles   'postcss-reduce-idents',
+54 verbose rebuildBundles   'postcss-single-charset',
+54 verbose rebuildBundles   'postcss-unique-selectors',
+54 verbose rebuildBundles   'postcss-zindex',
+54 verbose rebuildBundles   'read-file-stdin',
+54 verbose rebuildBundles   'write-file-stdout' ]
+55 info install cssnano@2.0.3
+56 info postinstall cssnano@2.0.3
+57 verbose rebuild bundle /Users/Rodrigo/Globant/Cars.com/local-test/node_modules/pixrem
+58 info build /Users/Rodrigo/Globant/Cars.com/local-test/node_modules/pixrem
+59 info preinstall pixrem@1.3.1
+60 verbose linkStuff [ false,
+60 verbose linkStuff   false,
+60 verbose linkStuff   false,
+60 verbose linkStuff   '/Users/Rodrigo/Globant/Cars.com/local-test/node_modules' ]
+61 info linkStuff pixrem@1.3.1
+62 verbose linkBins pixrem@1.3.1
+63 verbose linkMans pixrem@1.3.1
+64 verbose rebuildBundles pixrem@1.3.1
+65 verbose rebuildBundles [ 'browserslist', 'postcss', 'reduce-css-calc' ]
+66 info install pixrem@1.3.1
+67 info postinstall pixrem@1.3.1
+68 info install angular-template@0.0.0
+69 info postinstall angular-template@0.0.0
+70 verbose unsafe-perm in lifecycle true
+71 info angular-template@0.0.0 Failed to exec postinstall script
+72 error angular-template@0.0.0 postinstall: `bower install`
+72 error Exit status 8
+73 error Failed at the angular-template@0.0.0 postinstall script.
+73 error This is most likely a problem with the angular-template package,
+73 error not with npm itself.
+73 error Tell the author that this fails on your system:
+73 error     bower install
+73 error You can get their info via:
+73 error     npm owner ls angular-template
+73 error There is likely additional logging output above.
+74 error System Darwin 15.0.0
+75 error command "node" "/usr/local/bin/npm" "install"
+76 error cwd /Users/Rodrigo/Globant/Cars.com/local-test
+77 error node -v v0.10.33
+78 error npm -v 1.4.28
+79 error code ELIFECYCLE
+80 verbose exit [ 1, true ]

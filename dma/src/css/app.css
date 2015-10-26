@@ -1,0 +1,75 @@
+.rating {
+    margin: 0px 20px;
+    top: 0px;
+    padding: 0.2em 0.8em;
+    text-transform: uppercase;
+}
+
+
+.totalItems{
+    margin: 20px 10px;
+}
+
+.filterOrder{
+    margin: 20px 0px;
+}
+
+span.tooltips {
+    position: absolute;
+    width:140px;
+    color: #737373;
+    background: #FFFFFF;
+    border: 1px solid #6D6D6D;
+    height: auto;
+    line-height: 20px;
+    text-align: left;
+    visibility: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #828282;
+    padding: 10px 15px;
+}
+span.tooltips:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0; height: 0;
+    border-top: 10px solid #6D6D6D;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+span.tooltips:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-top: 8px solid #FFFFFF;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+span.tooltips {
+    visibility: visible;
+    opacity: 1;
+    bottom: 30px;
+    left: 100px;
+    margin-left: -76px;
+    z-index: 999;
+}
+
+span.tooltips > .close-tool-tip{
+    background-color: #94a0a9;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    line-height: normal;
+    margin-top: 0;
+    padding: 0 6px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+}

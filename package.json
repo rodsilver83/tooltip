@@ -1,0 +1,38 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "angular-template",
+  "description": "Base template for angular app",
+  "repository": "https://github.com/rodsilver83/AngularBase.git",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "~0.1.0",
+    "protractor": "^2.1.0",
+    "http-server": "^0.6.1",
+    "tmp": "0.0.23",
+    "bower": "^1.3.1",
+    "shelljs": "^0.2.6",
+    "connect-livereload": "^0.5.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "~0.5.5",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-cssmin": "~0.12.3",
+    "grunt-contrib-htmlmin": "~0.4.0",
+    "grunt-processhtml": "~0.3.8"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "pretest": "npm install",
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
+    "test-single-run": "node node_modules/karma/bin/karma start test/karma.conf.js  --single-run",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor test/protractor-conf.js"
+  }
+}

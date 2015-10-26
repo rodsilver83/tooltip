@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" ng-app="movieApp">
+<head>
+	<title>DAM Test</title>
+	<meta charset="utf-8">
+	<!-- build:css css/movies.min.css -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<!-- /build -->
+	<!-- build:js js/movies.min.js -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/bootstrap/js/dropdown.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/angular-resource/angular-resource.js"></script>
+	<script src="/bower_components/angular-animate/angular-animate.js"></script>
+	<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="/bower_components/angular-translate/angular-translate.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/animations.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/movies.min.js"></script>
+	<!-- /build -->
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="application/javascript">
+	var toolTipFlag = false;
+	$("div.checkbox").on("click",function(){
+		if(!toolTipFlag) {
+			toolTipFlag = true;
+			$(this).before('<span class="tooltips"><span class="close-tool-tip">x</span>Select up to<br>3 more vehicles to compare.</span>');
+			$(".close-tool-tip").on("click",function(){
+				$(this).parent().fadeOut(600);
+			});
+		}
+	});
+</script>
+
+</body>
+</html>

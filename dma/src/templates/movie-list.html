@@ -1,0 +1,90 @@
+<div class="container-fluid">
+
+	<section name="Search Header Filters">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="input-group">
+						<span class="input-group-addon" id="sizing-addon2">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</span>
+					<input type="search" class="form-control" ng-model="title" placeholder="Movie title"
+								 aria-describedby="sizing-addon2">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-9">
+				<pagination class="pull-left" ng-show="noOfPages >= 2" items-per-page="itemsPerPage"
+										total-items="totalItems" ng-model="currentPage"
+										ng-change="pageChanged()"></pagination>
+				<p class="text-info pull-left totalItems">{{itemStart}} - {{itemEnd}} of {{totalItems}} results</p>
+			</div>
+			<div class="col-sm-3">
+				<div class="btn-group filterOrder pull-right" role="group" aria-label="filter">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+							{{orderProp}}
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#/movies" ng-click="orderProp='Date'">Date</a></li>
+							<li><a href="#/movies" ng-click="orderProp='Name'">Name</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btn btn-primary" ng-click="reverse = !reverse">
+						{{reverse | reverseFilter}}
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default"
+					 ng-repeat="movie in filteredPagingMovies
+						 | orderBy:orderProp : reverse | limitTo: itemsPerPage ">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-3">
+							<a href="#/movies/{{movie.title}}">
+								<img ng-cloak ng-src="{{movie.image}}" class="img-rounded img-responsive" alt="Responsive image">
+							</a>
+						</div>
+						<div class="col-sm-9">
+							<div class="row">
+								<div class="col-sm-12">
+									<h1>{{movie.title}}<span class="label label-info rating">{{movie.rating}}</span></h1>
+
+									<table class="table">
+										<tr>
+											<td>Release Date</td>
+											<td>{{movie.date | date: "MMMM d, y"}}</td>
+										</tr>
+										<tr>
+											<td>Run Time</td>
+											<td>{{movie.run_time | timeFilter}}</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12">
+									<button class="btn btn-primary">Add to Watchlist</button>
+									<button class="btn btn-info">Preview</button>
+									<button class="btn btn-success">
+										<span class="glyphicon glyphicon-play"></span> Play
+									</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
